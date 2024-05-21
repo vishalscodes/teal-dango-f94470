@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Form</title>
+    <style>
+      :root {
+        font-family: sans-serif;
+        text-align: center;
+        height: 100%;
+      }
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        line-height: 1.5;
+      }
+      footer {
+        background-color: #dedede;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .label {
+        font-weight: bold;
+      }
+      .wrap {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1>Mock Test registration form</h1>
+      </header>
+      <form
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/pages/success.html"
+      >
+        <label for="name" class="label">Full Name with initials</label><br />
+        <input type="text" name="name" placeholder="Enter your Name" required />
+        <br />
+        <label for="email" class="label">E-Mail</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        /><br />
+        <label for="department" class="label">Department</label><br />
+        <input type="text" name="department" required />
+        <br />
+        <label for="designation" class="label">Designation</label><br />
+        <input type="text" name="designation" required />
+        <br />
+        <label for="college-of-work" class="label">College of work</label><br />
+        <input type="text" name="college-of-work" required />
+        <br />
+        <label for="gender" class="label">Gender</label><br />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Male" class="male" /><br />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="Female" class="female" />
+        <br />
+        <label for="other">Other</label>
+        <input type="radio" name="gender" value="Other" class="other" />
+        <br />
+        <button type="submit" class="label">Send</button>
+        <div class="wrap">
+          <label>
+            Do not fill this out if you are a human: <input name="bot-field" />
+          </label>
+        </div>
+        <br />
+      </form>
+    </div>
+    <footer>
+      <p>Find me elsewhere on the web as well:</p>
+      <p>
+        <a href="https://www.youtube.com/c/ShashiKS/">Youtube</a>
+        <a href="https://twitter.com/shashiksishere">Twitter</a>
+        <a href="https://t.me/joinchat/AyU4RtrVE-82Njc1">Telegram</a>
+      </p>
+    </footer>
+  </body>
+</html>
